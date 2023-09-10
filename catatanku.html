@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catatanku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top biru">
+        <div class="container biru">
+            <a class="navbar-brand" href="index.html">
+                <img src="src/img/logo.svg" alt="foody" width="80" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto text-center mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-navy" aria-current="page" href="catatanku.html">Catatanku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navy" href="#">BMI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-navy" href="makanan.html">Makanan</a>
+                    </li>
+                </ul>
+                <button class="btn" type="submit">Login</button>
+                <button class="btn btn-success navy hov-pink border border-0" type="submit">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <h1 class="text-start mb-5">Catatanku</h1>
+                <p>Select your meal time to add notes</p>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card py-4 pink mt-3 mb-3 border border-0">
+                        <div class="card-body text-center">
+                            <h5 class="card-title display-6 fw-bold">Pagi</h5>
+                            <p class="card-text fw-medium">05.00 - 10.00</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary navy hov-biru fw-medium border border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Select this time
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Pagi</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Time</option>
+                                                            <option value="1">06.00</option>
+                                                            <option value="2">07.00</option>
+                                                            <option value="3">08.00</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Jumlah Makan</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">Nama Makanan</span>
+                                                            <input type="text" class="form-control" placeholder="..." aria-label="..." aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Karbohidrat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Lemak</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Serat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Protein</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary biru" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary navy hov-pink">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card py-4 biru mt-3 mb-3 border border-0">
+                        <div class="card-body text-center">
+                            <h5 class="card-title display-6 fw-bold">Siang</h5>
+                            <p class="card-text fw-medium">10.00 - 15.00</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary navy hov-pink fw-medium border border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Select this time
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Pagi</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Time</option>
+                                                            <option value="1">06.00</option>
+                                                            <option value="2">07.00</option>
+                                                            <option value="3">08.00</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Jumlah Makan</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">Nama Makanan</span>
+                                                            <input type="text" class="form-control" placeholder="..." aria-label="..." aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Karbohidrat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Lemak</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Serat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Protein</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary biru" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary navy hov-pink">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card py-4 pink mt-3 mb-3 border border-0">
+                        <div class="card-body text-center">
+                            <h5 class="card-title display-6 fw-bold">Sore</h5>
+                            <p class="card-text fw-medium">15.00 - 20.00</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary navy hov-biru fw-medium border border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Select this time
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Pagi</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Time</option>
+                                                            <option value="1">06.00</option>
+                                                            <option value="2">07.00</option>
+                                                            <option value="3">08.00</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Jumlah Makan</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">Nama Makanan</span>
+                                                            <input type="text" class="form-control" placeholder="..." aria-label="..." aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Karbohidrat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Lemak</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Serat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Protein</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary biru" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary navy hov-pink">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card py-4 biru mt-3 mb-3 border border-0">
+                        <div class="card-body text-center">
+                            <h5 class="card-title display-6 fw-bold">Malam</h5>
+                            <p class="card-text fw-medium">20.00 - 00.00</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary navy hov-pink fw-medium border border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Select this time
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Pagi</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Time</option>
+                                                            <option value="1">06.00</option>
+                                                            <option value="2">07.00</option>
+                                                            <option value="3">08.00</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Jumlah Makan</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1">Nama Makanan</span>
+                                                            <input type="text" class="form-control" placeholder="..." aria-label="..." aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Karbohidrat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Lemak</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Serat</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+                                                            <option selected>Protein</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary biru" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary navy hov-pink">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+
+    <section class="py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 pb-5">
+                    <a href="#" class="btn btn-primary navy hov-pink border border-0 navy">Recents</a>
+                    <a href="#" class="btn btn-primary biru hov-navy border border-0 biru">History</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Nama Makanan</th>
+                                <th scope="col">Karbohidrat</th>
+                                <th scope="col">Lemak</th>
+                                <th scope="col">Serat</th>
+                                <th scope="col">Protein</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pagi</td>
+                                <td>Salad Buah</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Pagi</td>
+                                <td>Salad Buah</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Pagi</td>
+                                <td>Salad Buah</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-center py-3">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link biru hov-navy border-0" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link biru hov-navy border-0" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link biru hov-navy border-0" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link biru hov-navy border-0" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link biru hov-navy border-0" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="biru">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-lg-0 pt-md-2 pt-sm-4">
+                    <h4 class="fw-bold pb-3">FOODY</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque error sapiente eveniet ipsa maxime</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-lg-0 pt-md-2 pt-sm-4">
+                    <h4 class="fw-bold pb-3">Quicklinks</h4>
+                    <a href="#" class="text-decoration-none text-navy">Home</a><br>
+                    <a href="#" class="text-decoration-none text-navy">Catatanku</a><br>
+                    <a href="#" class="text-decoration-none text-navy">BMI</a><br>
+                    <a href="#" class="text-decoration-none text-navy">Makanan</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-lg-0 pt-md-2 pt-sm-4">
+                    <h4 class="fw-bold pb-3">Contact Us</h4>
+                    <p>(+62) 821 254 254
+                        info@foody.com <br>
+                        Helios Tower 75 <br>
+                        Bogor - Indonesia</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-lg-0 pt-md-2 pt-sm-4">
+                    <h4 class="fw-bold pb-3">FOODY</h4>
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control border border-0" placeholder="Send Message" aria-label="Username" aria-describedby="addon-wrapping">
+                        <span class="input-group-text pink" id="addon-wrapping"><i class="fa-regular fa-paper-plane"></i></span>
+                    </div>
+                    <div class="input-group flex-nowrap pt-3">
+                        <span class="input-group-text border border-0" id="addon-wrapping"><i class="fa-solid fa-globe" style="color: #131049;"></i></span>
+                        <select class="form-select border border-0" id="floatingSelectGrid">
+                            <option selected>English</option>
+                            <option value="1">Indonesia</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="pink py-3">
+        <div class="container">
+            <div class="row pink d-flex justify-content-between align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-2">
+                    <h4 class="fw-bold"><i class="fa-regular fa-copyright"></i> FOODY</h4>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-2 text-end">
+                    <h4 class="fw-bold">Privacy Policy</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

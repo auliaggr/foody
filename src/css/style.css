@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: #22110C;
+}
+body::-webkit-scrollbar-thumb {
+    background: #91d8ef;
+}
+
+.pink {
+    background-color: #FDCED0;
+    color: #131049;
+}
+
+.navy {
+    background-color: #131049;
+}
+
+.text-navy {
+    color: #131049;
+}
+
+.hov-pink:hover {
+    background-color: #FDCED0;
+    color: #131049;
+}
+
+.biru {
+    background-color: #D9F4FF;
+    color: #131049;
+}
+
+.hov-navy:hover {
+    background-color: #131049;
+    color: #D9F4FF;
+}
+
+.hov-biru:hover {
+    background-color: #D9F4FF;
+    color: #131049;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.linear-1 {
+    background: var(--linear-1, linear-gradient(210deg, #FDCED0 10.95%, #D9F4FF 86.63%));
+}
